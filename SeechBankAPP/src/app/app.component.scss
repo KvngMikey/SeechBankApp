@@ -1,0 +1,84 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.header {
+  // position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  // background-color: #1976d2;
+  // background-color: #bcbcbc;
+  background-color: #ffffff;
+  color: black;
+  font-weight: 600;
+
+  .bank-name {
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    // font-weight: bold;
+    font-size: 30px;
+    // margin-left: 5%;
+
+    .seech {
+      color: #8660c1;
+      font-weight: 700;
+    }
+
+    .bank {
+      margin-left: 7px;
+      font-weight: 400;
+    }
+  }
+}
+
+.amount {
+  color: #8660c1;
+  font-weight: 1000;
+  margin-right: 10%;
+}
+
+// .avatar {
+//   margin-right: 17.67%;
+// }
+
+.name {
+  margin-right: 1%;
+}
+
+.jd {
+  // margin-right: 9.3%;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+// .btn {
+// 	width: 395px;
+// 	height: 47px;
+// 	background-color: #8660c1;
+// 	margin-top: 20px;
+// 	color: white;
+// }
