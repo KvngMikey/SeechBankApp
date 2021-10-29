@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
+import { IPayment } from './payment.model';
 
 Injectable();
 export class PaymentService {
-  getPayments() {
-    let subject = new Subject();
+  getPayments(): Observable<IPayment[]> {
+    let subject = new Subject<IPayment[]>();
     setTimeout(() => {
       subject.next(PAYMENTS);
       subject.complete();
@@ -13,7 +14,7 @@ export class PaymentService {
   }
 }
 
-const PAYMENTS = [
+const PAYMENTS: IPayment[] = [
   {
     name: 'John Doe',
     desc: 'Lorem ipsum trans multi dan short ehn come',
