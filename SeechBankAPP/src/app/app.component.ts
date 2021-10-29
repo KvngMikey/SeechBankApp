@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'SeechBankAPP';
 
-  public totalAmount: number = 550;
+  public totalAmount = '550.00';
 }

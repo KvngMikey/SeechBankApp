@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { PaymentsListComponent } from './payments/payments-list.component';
 import { PaymentsThumbnailComponent } from './payments/payments-thumbnail.component';
 import { PaymentService } from './payments/shared/payment.service';
-
+import { ToastrService } from './common/toastr.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +14,7 @@ import { PaymentService } from './payments/shared/payment.service';
     PaymentsThumbnailComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [PaymentService],
+  providers: [PaymentService, ToastrService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
